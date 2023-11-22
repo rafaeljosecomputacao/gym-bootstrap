@@ -1,0 +1,60 @@
+/* Colors */
+:root {
+    --bg-primary-color: #151515;
+    --bg-secondary-color: #1F1F1F;
+    --txt-primary: #F5F5F5;
+    --primary: #ed1c24;
+}
+
+/* General */
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: var(--bg-secondary-color);
+}
+
+.bg-primary-color {
+    background-color: var(--bg-primary-color);
+}
+
+/* Navbar */
+#navbar a {
+    text-transform: uppercase;
+    color: var(--txt-primary);
+    transition: .5s;
+}
+
+#navbar a:hover {
+    color: var(--primary);
+}
+
+#navbar button {
+    color: var(--txt-primary);
+    border: none;
+}
+
+#navbar button:hover {
+    box-shadow: none;
+}
+
+#navbar i {
+    font-size: 1.8em;
+}
+
+.navbar-brand {
+    font-weight: 900;
+    font-size: 1.8em;
+}
+
+#navbar-items .navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#navbar-items .nav-item {
+    margin: 0 1em;
+}
