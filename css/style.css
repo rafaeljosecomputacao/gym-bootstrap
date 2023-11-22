@@ -58,3 +58,135 @@ body {
 #navbar-items .nav-item {
     margin: 0 1em;
 }
+
+
+
+/* Footer */
+#footer {
+    padding: 3em 2em;
+}
+
+#footer-top {
+    margin-bottom: 2em;
+}
+
+#footer-top,
+#footer-top i {
+    color: var(--txt-primary);
+}
+
+#footer-top h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.6em;
+}
+
+#social-icons {
+    text-align: right;
+}
+
+#social-icons i {
+    margin-right: 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#social-icons i:hover {
+    color: var(--primary);
+}
+
+#footer-details {
+    margin-bottom: 3em;
+}
+
+#news-container,
+#contact-container,
+#links-container {
+    padding: 0;
+    border: 0;
+    margin-bottom: 1em;
+}
+
+#footer-details h4 {
+    color: var(--txt-primary);
+    margin-bottom: 1.5em;
+}
+
+#news-container p {
+    color: var(--txt-primary);
+}
+
+#news-container input {
+    background-color: transparent;
+    border: 1px solid var(--bg-secondary-color);
+    border-radius: 0;
+    color: var(--txt-primary);
+    font-weight: 300;
+}
+
+#news-container input::placeholder {
+    color: var(--txt-primary);
+    font-weight: 300;
+}
+
+#news-container input:focus {
+    box-shadow: none;
+}
+
+.btn-dark {
+    border: 1px solid var(--bg-secondary-color);
+    border-radius: 0;
+    background-color: var(--bg-secondary-color);
+    color: var(--txt-primary);
+    margin-bottom: 20px;
+}
+
+#contact-container p {
+    color: var(--txt-primary);
+}
+
+#links-container li {
+    margin-bottom: 0.5em;
+}
+
+#links-container a {
+    color: var(--txt-primary);
+    transition: .5s;
+    text-decoration: none;
+}
+
+#links-container a:hover {
+    color: var(--primary);
+}
+
+#footer-bottom {
+    color: var(--txt-primary);
+    border-top: 1px solid var(--bg-secondary-color);
+    padding-top: 2em;
+}
+
+#footer-bottom p {
+    font-weight: 300;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    #news-container {
+        padding-right: 2em;
+    }
+
+    #contact-container {
+        padding: 0 2em;
+        border-left: 1px solid var(--bg-secondary-color);
+        border-right: 1px solid var(--bg-secondary-color);
+    }
+
+    #links-container {
+        padding-left: 2em;
+    }
+}
+
+.temp {
+    height: 800px;
+    margin-top: 100px;
+}
