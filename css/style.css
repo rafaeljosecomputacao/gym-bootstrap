@@ -1,12 +1,18 @@
 /* Colors */
 :root {
     --bg-primary-color: #151515;
-    --bg-secondary-color: #1F1F1F;
+    --bg-secondary-color: #151515;
     --txt-primary: #F5F5F5;
     --txt-secondary: #D6D6D6;
     --primary: #ed1c24;
-    --primary-color: #ed1c24;
+
+   
+    --primary-color: #FFC107;
+    --dark-color: #151515;
     --primary-txt-color: #F5F5F5;
+    --secondary-txt-color: #151515;
+    --primary-bg-color: #F5F5F5;
+    --secondary-bg-color: #151515;
 }
 
 /* General */
@@ -16,7 +22,7 @@
 }
 
 body {
-    background-color: var(--bg-secondary-color);
+    background-color: var(--primary-bg-color);
 }
 
 .bg-primary-color {
@@ -24,7 +30,7 @@ body {
 }
 
 .bg-secondary-color {
-    background-color: #151515;
+    background-color: var(--bg-secondary-color);
 }
 
 .txt-primary {
@@ -35,14 +41,9 @@ body {
     color: var(--txt-secondary);
 }
 
-.title {
-    font-size: 1.8em;
-    font-weight: 700;
-    margin-bottom: 0.5em;
-}
-
-.subtitle {
-    font-size: 1em;
+/* Utilities */
+.secondary-bg-color {
+    background-color: var(--secondary-bg-color);
 }
 
 /* Navbar */
@@ -109,6 +110,61 @@ body {
 #main-subtitle {
     font-size: 1.5em;
     text-align: center;
+}
+
+/* Plans Section */
+#plans-section {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.plans-title {
+    text-align: left;
+    border-left: 4px solid var(--primary-color);
+}
+
+.title,
+.subtitle {
+    color: var(--secondary-txt-color);
+    margin-left: 8px;
+}
+
+.title {
+    font-weight: 700;
+    margin-bottom: 16px;  
+}
+
+.subtitle {
+    font-size: 1.2em;
+}
+
+#plans-container {
+    margin-top: 2em;
+}
+
+#plans-container .card {
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 0;
+    border: 2px solid var(--dark-color);
+}
+
+#plans-container .card-title {
+    font-weight: 700;
+    margin-bottom: 1.5em;
+}
+
+#plans-container .card-text {
+    color: var(--primary-txt-color);
+    font-size: 1.1em;
+}
+
+#plans-container .btn {
+    margin-top: 1.5em;
+    padding: 0.6em 1.2em;
+    border-radius: 0;
+    font-weight: 700;
+    color: var(--dark-color);
 }
 
 /* Gallery Section */
