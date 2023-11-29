@@ -167,6 +167,35 @@ body {
     color: var(--dark-color);
 }
 
+/* Experience Section */
+#experience-section {
+    margin-bottom: 2em;
+}
+
+.experience-title {
+    text-align: left;
+    border-left: 4px solid var(--primary-color);
+}
+
+#experience-container {
+    margin-top: 2em;
+}
+
+#experience-container .card {
+    margin-bottom: 1em;
+    border-radius: 0;
+    border: 2px solid var(--dark-color);
+}
+
+#experience-container img {
+    border-radius: 0;
+}
+
+#experience-container .card-text {
+    color: var(--primary-txt-color);
+    font-size: 1.1em;
+}
+
 /* Gallery Section */
 #gallery-container {
     margin-bottom: 4em;
@@ -348,6 +377,21 @@ body {
 
 /* Responsive */
 @media (min-width: 768px) {
+    /* Experience Section */
+    #experience-section {
+        margin-top: -1em;
+    }
+
+    #experience-container .card {
+        min-height: 250px;
+    }
+
+    #experience-container .card-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     #gallery-images .banner-content {
         opacity: 0;
     }
@@ -372,5 +416,17 @@ body {
 
     #links-container {
         padding-left: 2em;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Plans Section */
+    #plans-container .card:hover {
+        border-color: var(--primary-color);
+    }
+
+    /* Experience Section */
+    #experience-container .card:hover {
+        border-color: var(--primary-color);
     }
 }
