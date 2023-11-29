@@ -25,64 +25,62 @@ body {
     background-color: var(--primary-bg-color);
 }
 
-.bg-primary-color {
-    background-color: var(--bg-primary-color);
-}
-
-.bg-secondary-color {
-    background-color: var(--bg-secondary-color);
-}
-
-.txt-primary {
-    color: var(--txt-primary);
-}
-
-.txt-secondary {
-    color: var(--txt-secondary);
-}
-
 /* Utilities */
+.primary-bg-color {
+    background-color: var(--primary-bg-color);
+}
+
 .secondary-bg-color {
     background-color: var(--secondary-bg-color);
 }
 
-/* Navbar */
-#navbar a {
-    text-transform: uppercase;
-    color: var(--txt-primary);
-    transition: .5s;
+/* Header */
+.navbar-brand {
+    font-weight: 900;
+    color: var(--secondary-txt-color);
 }
 
-#navbar a:hover {
-    color: var(--primary);
+.navbar-brand span {
+    font-weight: 900;
 }
 
 #navbar button {
-    color: var(--txt-primary);
+    color: var(--secondary-txt-color);
     border: none;
 }
 
-#navbar button:hover {
+#navbar button:focus {
     box-shadow: none;
+    border: none;
 }
 
 #navbar i {
-    font-size: 1.8em;
-}
-
-.navbar-brand {
-    font-weight: 900;
-    font-size: 1.8em;
+    font-size: 1.4em;
 }
 
 #navbar-items .navbar-nav {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     width: 100%;
 }
 
-#navbar-items .nav-item {
-    margin: 0 1em;
+.nav-link {
+    color: var(--secondary-txt-color);
+    font-weight: 700;
+    transition: .5s;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
 }
 
 /* Main */
@@ -392,6 +390,7 @@ body {
         justify-content: center;
     }
 
+
     #gallery-images .banner-content {
         opacity: 0;
     }
@@ -420,6 +419,15 @@ body {
 }
 
 @media (min-width: 1024px) {
+    /* Header */
+    .navbar-brand {
+        font-size: 1.8em;
+    }
+
+    #navbar-items .nav-item {
+        margin: 0 1em;
+    }
+
     /* Plans Section */
     #plans-container .card:hover {
         border-color: var(--primary-color);
