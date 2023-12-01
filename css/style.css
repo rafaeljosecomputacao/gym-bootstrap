@@ -202,54 +202,45 @@ body {
     font-size: 1.1em;
 }
 
-
-/* Gallery Section */
-#gallery-container {
-    margin-bottom: 4em;
+/* Coaches Section */
+#coaches-section {
+    margin-bottom: 2em;
 }
 
-#gallery-images {
+.coaches-title {
+    text-align: left;
+    border-left: 4px solid var(--primary-color);
+}
+
+#coaches-container {
     margin-top: 2em;
 }
 
-#gallery-images .col-md-4 {
-    position: relative;
+#coaches-container .card {
+    margin-bottom: 1em;
+    border-radius: 0;
+    border: 2px solid var(--dark-color);
     cursor: pointer;
+    transition: .5s;
 }
 
-#gallery-images .col-md-4:hover > .banner-content {
-    opacity: 0.2;
+#coaches-container img {
+    border-radius: 0;
 }
 
-#gallery-images .banner-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #F5F5F5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    opacity: 0.2;
-    transition: 0.5s;
+#coaches-container .card-header,
+#coaches-container .card-footer {
+    color: var(--light-color);
+    border: none;
 }
 
-.banner-content p,
-.banner-content h3 {
-    color: #151515;
+#coaches-container .card-title {
     font-weight: 700;
 }
 
-.banner-content p {
-    font-size: 1em;
+#coaches-container .card-text {
+    color: var(--primary-txt-color);
 }
-
-.banner-content h3 {
-    font-size: 1.2em;
-}
-
 
 /* About Section */
 #about-section {
@@ -435,12 +426,25 @@ body {
         justify-content: center;
     }
 
-
-    #gallery-images .banner-content {
-        opacity: 0;
+    /* Coaches Section */
+    #coaches-section {
+        margin-top: -1em;
     }
 
-    
+    #coaches-container .card {
+        min-height: 480px;
+    }
+
+    #coaches-container .card-header,
+    #coaches-container .card-text,
+    #coaches-container .card-footer {
+        font-size: 0.8em;
+    }
+
+    #coaches-container .card-title {
+        font-size: 1em;
+    }
+
     /* About Section */
     #about-section {
         margin-top: -1em; 
@@ -530,6 +534,21 @@ body {
     /* Experience Section */
     #experience-container .card:hover {
         border-color: var(--primary-color);
+    }
+
+    /* Coaches Section */
+    #coaches-container .card:hover {
+        border-color: var(--primary-color);
+    }
+
+    #coaches-container .card-header,
+    #coaches-container .card-text,
+    #coaches-container .card-footer {
+        font-size: 1em;
+    }
+
+    #coaches-container .card-title {
+        font-size: 20px;
     }
 
     /* About Section */
