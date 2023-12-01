@@ -16,6 +16,10 @@
     font-weight: 500;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--primary-bg-color);
 }
@@ -145,6 +149,8 @@ body {
     margin-bottom: 1em;
     border-radius: 0;
     border: 2px solid var(--dark-color);
+    cursor: pointer;
+    transition: .5s;
 }
 
 #plans-container .card-title {
@@ -183,6 +189,8 @@ body {
     margin-bottom: 1em;
     border-radius: 0;
     border: 2px solid var(--dark-color);
+    cursor: pointer;
+    transition: .5s;
 }
 
 #experience-container img {
@@ -242,30 +250,68 @@ body {
     font-size: 1.2em;
 }
 
-/* Info Section */
-#info-banner {
-    align-items: center;
-    display: flex;
+
+/* About Section */
+#about-section {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.about-title {
+    text-align: left;
+    border-left: 4px solid var(--primary-color);
+}
+
+#about-container {
+    margin-top: 2em;
+}
+
+#about-banner {
     margin-bottom: 1em;
 }
 
-#info-content {
-    margin-bottom: 2em;
-    padding: 1em;
+#about-banner img {
+    cursor: pointer;
+    transition: .5s;
+    border: 2px solid var(--dark-color);
 }
 
-#info-content button {
-    margin-bottom: 0;
+#about-content {
+    padding: 2em 1em;
+    color: var(--primary-txt-color);
+    cursor: pointer;
+    transition: .5s;
+    border: 2px solid var(--dark-color);
 }
 
-#info-numbers {
+#about-content h3 {
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+#about-content span {
+    font-weight: 700;
+}
+
+#about-content button {
+    border-radius: 0;
+    font-weight: 700;
+    color: var(--dark-color);
+    padding: 0.6em 1.2em;
+}
+
+#about-numbers {
     margin: 1em 0;
 }
 
-#info-numbers h3 {
-    font-size: 2em;
+#about-numbers h4 {
+    font-size: 1.5em;
+    color: var(--primary-color);
 }
 
+#about-numbers p {
+    color: var(--light-color);
+}
 
 /* Footer */
 #footer {
@@ -394,15 +440,38 @@ body {
         opacity: 0;
     }
 
-    #info-banner {
+    
+    /* About Section */
+    #about-section {
+        margin-top: -1em; 
+    }
+
+    #about-banner {
         margin-bottom: 0;
     }
 
-    #info-content {
-        padding: 2.5em;
+    #about-banner .img-fluid {
+        max-width: 95%;
     }
 
+    #about-content {
+        margin-left: -12px;
+        padding: 1em;
+    }
 
+    #about-content h3 {
+        font-size: 1.1em;
+        margin-bottom: 0.4em;
+    }
+      
+    #about-numbers {
+        margin: 0.4em 0;
+    }
+
+    #about-numbers h4 {
+        font-size: 1.1em;
+    }
+    
     /* Footer */
     #news-container,
     #contact-container,
@@ -461,6 +530,34 @@ body {
     /* Experience Section */
     #experience-container .card:hover {
         border-color: var(--primary-color);
+    }
+
+    /* About Section */
+    #about-banner img:hover {
+        border-color: var(--primary-color);
+    }
+
+    #about-content:hover {
+        border-color: var(--primary-color);
+    }
+
+    #about-content {
+        padding: 2em;
+        display: flex;
+        align-items: center;
+    }
+
+    #about-content h3 {
+        font-size: 1.7em;
+        margin-bottom: 1.2em;
+    }
+      
+    #about-numbers {
+        margin: 2em 0;
+    }
+
+    #about-numbers h4 {
+        font-size: 1.5em;
     }
 
     /* Footer */
