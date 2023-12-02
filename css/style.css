@@ -77,6 +77,10 @@ body {
     color: var(--primary-color);
 }
 
+.nav-link[active] {
+    color: var(--primary-color);
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -200,6 +204,75 @@ body {
 #experience-container .card-text {
     color: var(--primary-txt-color);
     font-size: 1.1em;
+}
+
+/* Gyms Section */
+#gyms-section {
+    margin: 2em 0;
+    padding: 4em 1em;
+}
+
+#gyms-section h2 {
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+#gyms-section p {
+    color: var(--primary-txt-color);
+    margin-bottom: 2em;
+}
+
+#gyms-section label {
+    color: var(--primary-txt-color);
+    display: block;
+    text-align: left; 
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#gyms-section .btn-drop {
+    background-color: transparent;
+    border-radius: 0;
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-txt-color);
+    font-weight: 300;
+    width: 100%;
+}
+
+#gyms-section .btn-drop:focus {
+    border-color: var(--primary-color);
+}
+
+#gyms-section .dropdown-menu {
+    background-color: var(--light-color);
+    border-radius: 0;
+    width: 100%;
+}
+
+#gyms-section .dropdown-item {
+    color: var(--secondary-txt-color);
+    padding: 0.5em 1em;
+}
+
+#gyms-section .dropdown-item:hover {
+    color: var(--secondary-txt-color);
+    background-color: var(--primary-color);
+}
+
+.answer-drop label {
+    margin-top: 2em;
+}
+
+.answer-drop input {
+    background-color: transparent;
+    border-radius: 0;
+    border: 2px solid var(--secondary-color);
+    color: var(--primary-txt-color);
+    font-weight: 300;
+}
+
+.answer-drop input:disabled {
+    background-color: transparent;
 }
 
 /* Coaches Section */
@@ -426,6 +499,11 @@ body {
         justify-content: center;
     }
 
+    /* Gyms Section */
+    #gyms-section {
+        margin: -1em 0 3em;
+    }
+
     /* Coaches Section */
     #coaches-section {
         margin-top: -1em;
@@ -523,7 +601,7 @@ body {
     }
 
     #navbar-items .nav-item {
-        margin: 0 1em;
+        margin: 0 0.5em;
     }
 
     /* Plans Section */
@@ -534,6 +612,11 @@ body {
     /* Experience Section */
     #experience-container .card:hover {
         border-color: var(--primary-color);
+    }
+
+    /* Gyms Section */
+    #gyms-section {
+        padding: 4em 7.5em;
     }
 
     /* Coaches Section */
